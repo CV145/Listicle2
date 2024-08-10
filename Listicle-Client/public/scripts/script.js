@@ -33,25 +33,27 @@ function displayDestinations() {
 }
 
 function displayDetailedView(destination) {
+    console.log('Destination Data:', destination); // Add this log
     const detailedView = document.getElementById('detailed-view');
     detailedView.style.display = 'block';
     detailedView.innerHTML = `
-        <article>
-            <header>
-                <h2>${destination.name}</h2>
-            </header>
-            <img src="${destination.imageUrl}" alt="${destination.name}">
-            <p><strong>Main Attractions:</strong> ${destination.attractions.join(', ')}</p>
-            <p><strong>Best Time to Visit:</strong> ${destination.bestTimeToVisit}</p>
-            <p><strong>Travel Tips:</strong> ${destination.travelTips}</p>
-            <p><strong>Average Cost:</strong> ${destination.averageCost}</p>
-            <footer>
-                <button onclick="goBack()">Back</button>
-            </footer>
-        </article>
-    `;
+    <article>
+        <header>
+            <h2>${destination.name}</h2>
+        </header>
+        <img src="${destination.imageUrl}" alt="${destination.name}">
+        <p><strong>Main Attractions:</strong> ${Array.isArray(destination.attractions) ? destination.attractions.join(', ') : destination.attractions}</p>
+        <p><strong>Best Time to Visit:</strong> ${destination.besttimetovisit}</p>
+        <p><strong>Travel Tips:</strong> ${destination.traveltips}</p>
+        <p><strong>Average Cost:</strong> ${destination.averagecost}</p>
+        <footer>
+            <button onclick="goBack()">Back</button>
+        </footer>
+    </article>
+`;
     document.getElementById('main-content').style.display = 'none';
 }
+
 
 function goBack() {
     document.getElementById('main-content').style.display = 'block';

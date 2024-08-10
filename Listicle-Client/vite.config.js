@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
     build: {
-        outDir: '../server/public',
+        outDir: '../Listicle-Server/public',
         emptyOutDir: true
     },
     server: {
