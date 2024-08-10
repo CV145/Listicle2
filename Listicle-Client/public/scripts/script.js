@@ -25,7 +25,7 @@ function displayDestinations() {
             <header>
                 <h2>${destination.name}</h2>
             </header>
-            <img src="${destination.imageUrl}" alt="${destination.name}">
+            <img src="${destination.imageurl}" alt="${destination.name}">
         `;
         card.addEventListener('click', () => displayDetailedView(destination));
         container.appendChild(card);
@@ -41,7 +41,7 @@ function displayDetailedView(destination) {
         <header>
             <h2>${destination.name}</h2>
         </header>
-        <img src="${destination.imageUrl}" alt="${destination.name}">
+        <img src="${destination.imageurl}" alt="${destination.name}">
         <p><strong>Main Attractions:</strong> ${Array.isArray(destination.attractions) ? destination.attractions.join(', ') : destination.attractions}</p>
         <p><strong>Best Time to Visit:</strong> ${destination.besttimetovisit}</p>
         <p><strong>Travel Tips:</strong> ${destination.traveltips}</p>
