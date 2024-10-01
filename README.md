@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://imgur.com/niW8WD2' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://submissions.us-east-1.linodeobjects.com/web103/vd04bDpi.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with ...  LiceCAP
 
